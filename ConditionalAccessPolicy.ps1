@@ -1,9 +1,3 @@
-# Check if the AzureAD module is installed
-if (-not (Get-Module -ListAvailable -Name AzureAD)) {
-    # Install the AzureAD module if not already installed
-    Install-Module -Name AzureAD -Scope CurrentUser -Force -AllowClobber
-}
-
 # Import the module
 Import-Module AzureAD
 
